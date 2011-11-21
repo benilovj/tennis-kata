@@ -1,0 +1,8 @@
+rspec syntax:
+
+context "initially" do
+  subject { Game.new(Player.new("J"), Player.new("B")) }
+  
+  its(:score) { should == "Love all"}
+end
+
