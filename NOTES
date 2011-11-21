@@ -6,3 +6,14 @@ context "initially" do
   its(:score) { should == "Love all"}
 end
 
+
+
+rspec helpers:
+
+module GameHelpers
+  ...
+end
+
+RSpec.configure do |c|
+  c.include GameHelpers
+end
